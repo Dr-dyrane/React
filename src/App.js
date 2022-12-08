@@ -18,10 +18,12 @@ function App() {
       <Employee name="Jason" role="manager" />
       <Employee name="Mabel" role={role} />
       <Employee name="Allison" /> < />
-    ): ( <p>You cannot see the employees</p>
+    ):(<p>
+You cannot see the employees
+      </p>
     )}
-    </div>
-    );
+  </div>
+);
 }
 
 export default App;
