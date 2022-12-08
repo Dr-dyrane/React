@@ -9,7 +9,7 @@ function App() {
     setRole] = useState('developer');
   const showEmployees = true;
   return (
-    <div style="background:red"class="App bg-red-300">
+    <div class="App bg-red-300">
       {showEmployees ? (
       <>
       <input type='text' onChange={(e) => {
