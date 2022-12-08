@@ -1,4 +1,4 @@
-import './App.css';
+import './index.css';
 import Employee from './components/Employee'
 import {
   useState
@@ -9,7 +9,7 @@ function App() {
     setRole] = useState('developer');
   const showEmployees = true;
   return (
-    <div class="shadow-lg shadow-red-500">
+    <div class="red">
       {showEmployees ? (
       <>
       <input type='text' onChange={(e) => {
