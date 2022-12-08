@@ -15,15 +15,13 @@ function App() {
       <input type='text' onChange={(e) => {
         setRole(e.target.value);
       }} />
-    <Employee name="Jason" role="manager" />
-    <Employee name="Mabel" role={role} />
-    <Employee name="Allison" />
-    < />
-    ): (< p >
-    You cannot see the employees < /p>
+      <Employee name="Jason" role="manager" />
+      <Employee name="Mabel" role={role} />
+      <Employee name="Allison" /> < />
+    ): ( <p>You cannot see the employees</p>
     )}
-  </div>
-);
+    </div>
+    );
 }
 
 export default App;
