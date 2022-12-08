@@ -10,16 +10,18 @@ function App() {
   const showEmployees = true;
   return (
     <div className="App">
-      {showEmployees ?
+      {showEmployees ? (
       <>
       <input type='text' onChange={(e) => {
         setRole(e.target.value);
       }} />
     <Employee name="Jason" role="manager" />
     <Employee name="Mabel" role={role} />
-    <Employee name="Allison" /> < />: < p >
+    <Employee name="Allison" />
+    < />
+    ): (< p >
     You cannot see the employees < /p>
-    }
+    )}
   </div>
 );
 }
