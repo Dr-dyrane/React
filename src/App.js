@@ -2,13 +2,17 @@ import './App.css';
 import Employee from './components/Employee'
 
 function App() {
+  let role = 'developer'
   const showEmployees = true;
   return (
     <div className="App">
       {showEmployees ?
       <>
-      <Employee name="Jason" role="manager"/>
-      <Employee name="Mabel" />
+      <input type ='text' onChange={(e) => {
+        role = e.target.value;
+      }}/>
+      <Employee name="Jason" role="manager" />
+      <Employee name="Mabel" role={role}/>
       <Employee name="Allison" /> < />: < p >
       You cannot see the employees < /p>
       }
