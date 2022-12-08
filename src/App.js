@@ -1,4 +1,5 @@
 import './App.css';
+import Employee from './components/Employee'
 
 function App() {
   return (
