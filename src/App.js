@@ -9,7 +9,7 @@ function App() {
     setRole] = useState('developer');
   const showEmployees = true;
   return (
-    <div className="App">
+    <div className="App bg-red-300">
       {showEmployees ? (
       <>
       <input type='text' onChange={(e) => {
@@ -18,7 +18,7 @@ function App() {
       <Employee name="Jason" role="manager" />
       <Employee name="Mabel" role={role} />
       <Employee name="Allison" /> < />
-    ):(<p>
+    ): (<p>
 You cannot see the employees
       </p>
     )}
