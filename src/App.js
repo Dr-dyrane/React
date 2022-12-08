@@ -3,12 +3,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
         <p>
         hello! dyrane
     </p>
-    
-    </header>
     </div>
   );
 }
