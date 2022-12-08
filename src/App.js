@@ -15,12 +15,11 @@ function App() {
       <input type='text' onChange={(e) => {
         setRole(e.target.value);
       }} />
-      <div>
-      <Employee name="Jason" role="manager" />
-      <Employee name="Mabel" role={role} />
-      <Employee name="Allison" />
-      </div>
-      < />
+      <div class = "flex flex-wrap">
+        <Employee name="Jason" role="manager" />
+        <Employee name="Mabel" role={role} />
+        <Employee name="Allison" />
+      </div> < />
     ): (<p>
 You cannot see the employees
       </p>
