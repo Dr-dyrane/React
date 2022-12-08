@@ -4,9 +4,7 @@ import Employee from './components/Employee'
 function App() {
   return (
     <div className="App">
-        <p>
-        hello! dyrane
-    </p>
+        <Employee />
     </div>
   );
 }
