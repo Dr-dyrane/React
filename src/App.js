@@ -16,28 +16,28 @@ function App() {
         setRole(e.target.value);
       }} />
       <div class="flex flex-wrap">
-        <Employee 
-          name="Jason" 
-          role="manager" 
-          img="https://www.pexels.com/photo/man-smiling-behind-wall-220453/"/>
-        <Employee 
-          name="Mabel" 
-          role={role}
-          img="https://www.pexels.com/photo/man-smiling-behind-wall-220453/"/>
-        <Employee 
-          name="Allison"
-          img="https://www.pexels.com/photo/man-smiling-behind-wall-220453/"/>
-        <Employee 
-          name="Jason" 
-          role="manager" 
-          img="https://www.pexels.com/photo/man-smiling-behind-wall-220453/"/>
-        <Employee 
-          name="Mabel" 
-          role={role}
-          img="https://www.pexels.com/photo/man-smiling-behind-wall-220453/"/>
-        <Employee 
-          name="Allison"
-          img="https://www.pexels.com/photo/man-smiling-behind-wall-220453/"/>
+        <Employee
+        name="Jason"
+        role="manager"
+        img="https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg" />
+        <Employee
+        name="Mabel"
+        role={role}
+        img="https://www.pexels.com/photo/man-smiling-behind-wall-220453/" />
+        <Employee
+        name="Allison"
+        img="https://www.pexels.com/photo/man-smiling-behind-wall-220453/" />
+        <Employee
+        name="Jason"
+        role="manager"
+        img="https://www.pexels.com/photo/man-smiling-behind-wall-220453/" />
+        <Employee
+        name="Mabel"
+        role={role}
+        img="https://www.pexels.com/photo/man-smiling-behind-wall-220453/" />
+        <Employee
+        name="Allison"
+        img="https://www.pexels.com/photo/man-smiling-behind-wall-220453/" />
       </div> < />
     ): (<p>
 You cannot see the employees
