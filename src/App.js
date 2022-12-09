@@ -71,7 +71,7 @@ function App() {
             name={employee.name}
             role={employees.role}
             img={employee.img}
-          />);
+            />);
       })}
       </div> < />
     ): (<p>
