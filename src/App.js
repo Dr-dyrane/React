@@ -67,7 +67,7 @@ function App() {
         return (
           <Employee
             name={employee.name}
-            role={employees.role}
+            role={employee.role}
             img={employee.img}
             />);
       })}
