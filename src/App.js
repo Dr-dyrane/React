@@ -23,37 +23,37 @@ function App() {
       {
         name: "Allison",
         role: "intern",
-        img: "https://www.pexels.com/photo/selective-focus-photography-of-woman-1239288.jpeg",
+        img: "https://images.pexels.com/photos/3831635/pexels-photo-3831635.jpeg",
       },
       {
         name: "Deli",
         role: "realtor",
-        img: "https://www.pexels.com/photo/selective-focus-photography-of-woman-holding-to-trunk-1958728.jpeg",
+        img: "https://images.pexels.com/photos/3831649/pexels-photo-3831649.jpeg",
       },
       {
         name: "Bella",
         role: "carer",
-        img: "https://www.pexels.com/photo/woman-with-red-lipstick-and-blonde-hair-4079218.jpeg",
+        img: "https://images.pexels.com/photos/3821645/pexels-photo-3821645.jpeg",
       },
       {
         name: "Fortune",
         role: "mariner",
-        img: "https://pixabay.com/photos/woman-portrait-bust-model-face-3220835.jpeg",
+        img: "https://images.pexels.com/photos/3831045/pexels-photo-3831045.jpeg",
       },
       {
         name: "Taiwo",
         role: "designer",
-        img: "https://www.pexels.com/photo/photo-of-man-wearing-leather-jacket-4048501.jpeg",
+        img: "https://images.pexels.com/photos/3821645/pexels-photo-3821645.jpeg",
       },
       {
         name: "Ikenna",
         role: "author",
-        img: "https://pixabay.com/photos/man-beard-portrait-bearded-man-657869.jpeg",
+        img: "https://images.pexels.com/photos/3831745/pexels-photo-3831745.jpeg",
       },
       {
         name: "Dyrane",
         role: "owner",
-        img: "https://www.istockphoto.com/photo/portrait-of-happy-mature-man-wearing-spectacles-and-looking-at-camera-indoor-gm1331257339-414447355.jpeg",
+        img: "https://images.pexels.com/photos/3839645/pexels-photo-3839645.jpeg",
       },
     ]);
   const showEmployees = true;
