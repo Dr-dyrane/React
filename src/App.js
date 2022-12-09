@@ -36,7 +36,7 @@ function App() {
       {
         name: "Fortune",
         role: "mariner",
-        img: "https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg",
+        img: "https://pixabay.com/photos/woman-portrait-bust-model-face-3220835.jpeg",
       },
       {
         name: "Taiwo",
@@ -51,7 +51,7 @@ function App() {
       {
         name: "Dyrane",
         role: "owner",
-        img: "https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg",
+        img: "https://www.istockphoto.com/photo/portrait-of-happy-mature-man-wearing-spectacles-and-looking-at-camera-indoor-gm1331257339-414447355.jpeg",
       },
     ]);
   const [role,
