@@ -5,6 +5,8 @@ import {
 } from 'react';
 
 function App() {
+  const [role,
+    setRole] = useState('developer');
   const [employees,
     setEmployees] = useState([{
       name: "Jason",
@@ -54,8 +56,6 @@ function App() {
         img: "https://www.istockphoto.com/photo/portrait-of-happy-mature-man-wearing-spectacles-and-looking-at-camera-indoor-gm1331257339-414447355.jpeg",
       },
     ]);
-  const [role,
-    setRole] = useState('developer');
   const showEmployees = true;
   return (
     <div class="App">
