@@ -69,6 +69,7 @@ function App() {
             name={employee.name}
             role={employee.role}
             img={employee.img}
+            alt={employee.name}
             />);
       })}
       </div> < />
