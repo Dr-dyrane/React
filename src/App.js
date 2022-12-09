@@ -15,7 +15,10 @@ function App() {
       <input type='text' onChange={(e) => {
         setRole(e.target.value);
       }} />
-      <div class = "flex flex-wrap">
+      <div class="flex flex-wrap">
+        <Employee name="Jason" role="manager" />
+        <Employee name="Mabel" role={role} />
+        <Employee name="Allison" />
         <Employee name="Jason" role="manager" />
         <Employee name="Mabel" role={role} />
         <Employee name="Allison" />
