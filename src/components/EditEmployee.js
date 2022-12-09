@@ -39,3 +39,5 @@ function EditEmployee() {
       </Modal> < />
   );
 }
+
+export default EditEmployee;
