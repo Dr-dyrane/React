@@ -16,12 +16,28 @@ function App() {
         setRole(e.target.value);
       }} />
       <div class="flex flex-wrap">
-        <Employee name="Jason" role="manager" />
-        <Employee name="Mabel" role={role} />
-        <Employee name="Allison" />
-        <Employee name="Jason" role="manager" />
-        <Employee name="Mabel" role={role} />
-        <Employee name="Allison" />
+        <Employee 
+          name="Jason" 
+          role="manager" 
+          img="https://www.pexels.com/photo/man-smiling-behind-wall-220453/"/>
+        <Employee 
+          name="Mabel" 
+          role={role}
+          img="https://www.pexels.com/photo/man-smiling-behind-wall-220453/"/>
+        <Employee 
+          name="Allison"
+          img="https://www.pexels.com/photo/man-smiling-behind-wall-220453/"/>
+        <Employee 
+          name="Jason" 
+          role="manager" 
+          img="https://www.pexels.com/photo/man-smiling-behind-wall-220453/"/>
+        <Employee 
+          name="Mabel" 
+          role={role}
+          img="https://www.pexels.com/photo/man-smiling-behind-wall-220453/"/>
+        <Employee 
+          name="Allison"
+          img="https://www.pexels.com/photo/man-smiling-behind-wall-220453/"/>
       </div> < />
     ): (<p>
 You cannot see the employees
