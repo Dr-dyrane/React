@@ -16,22 +16,22 @@ function App() {
         role: {
           role
         },
-        img: "https://www.pexels.com/photo/woman-smiling-2709388/",
+        img: "https://www.pexels.com/photo/woman-smiling-2709388.jpeg",
       },
       {
         name: "Allison",
         role: "intern",
-        img: "https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg",
+        img: "https://www.pexels.com/photo/selective-focus-photography-of-woman-1239288.jpeg",
       },
       {
         name: "Deli",
         role: "realtor",
-        img: "https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg",
+        img: "https://www.pexels.com/photo/selective-focus-photography-of-woman-holding-to-trunk-1958728.jpeg",
       },
       {
         name: "Bella",
         role: "carer",
-        img: "https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg",
+        img: "https://www.pexels.com/photo/woman-with-red-lipstick-and-blonde-hair-4079218.jpeg",
       },
       {
         name: "Fortune",
@@ -41,7 +41,7 @@ function App() {
       {
         name: "Taiwo",
         role: "designer",
-        img: "https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg",
+        img: "https://www.pexels.com/photo/photo-of-man-wearing-leather-jacket-4048501.jpeg",
       },
       {
         name: "Ikenna",
