@@ -15,9 +15,7 @@ function App() {
     },
       {
         name: "Mabel",
-        role: {
-          role
-        },
+        role: "developer",
         img: "https://images.pexels.com/photos/2225298/pexels-photo-2225298.jpeg",
       },
       {
