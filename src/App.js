@@ -6,23 +6,54 @@ import {
 
 function App() {
   const [employees,
-    setEmployees] = useState([
+    setEmployees] = useState([{
+      name: "Jason",
+      role: "manager",
+      img: "https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg",
+    },
       {
-        name:"Jason",
-        role:"manager",
-        img:"https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg",
-      },
-            {
-        name:"Mabel",
-        role:{role},
-        img:"https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg",
+        name: "Mabel",
+        role: {
+          role
+        },
+        img: "https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg",
       },
       {
-        name:"Allison",
-        role:"manager",
-        img:"https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg",
+        name: "Allison",
+        role: "intern",
+        img: "https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg",
       },
-      ]);
+      {
+        name: "Deli",
+        role: "realtor",
+        img: "https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg",
+      },
+      {
+        name: "Bella",
+        role: "carer",
+        img: "https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg",
+      },
+      {
+        name: "Fortune",
+        role: "mariner",
+        img: "https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg",
+      },
+      {
+        name: "Taiwo",
+        role: "designer",
+        img: "https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg",
+      },
+      {
+        name: "Ikenna",
+        role: "author",
+        img: "https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg",
+      },
+      {
+        name: "Dyrane",
+        role: "owner",
+        img: "https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg",
+      },
+    ]);
   const [role,
     setRole] = useState('developer');
   const showEmployees = true;
