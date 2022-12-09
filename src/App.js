@@ -66,12 +66,13 @@ function App() {
       }} />
       <div class="flex flex-wrap justify-center">
         {employees.map((employee) => {
+        return (
           <Employee
-            name = {employee.name}
-            role = {employees.role}
-            img = {employee.img}
-          />;
-        })}
+            name={employee.name}
+            role={employees.role}
+            img={employee.img}
+          />);
+      })}
       </div> < />
     ): (<p>
 You cannot see the employees
