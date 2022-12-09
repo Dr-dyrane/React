@@ -18,7 +18,7 @@ function App() {
         role: {
           role
         },
-        img: "https://www.pexels.com/photo/woman-smiling-2709388",
+        img: "https://images.pexels.com/photos/3831646/pexels-photo-3831646.jpeg",
       },
       {
         name: "Allison",
