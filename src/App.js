@@ -5,6 +5,24 @@ import {
 } from 'react';
 
 function App() {
+  const [employees,
+    setEmployees] = useState([
+      {
+        name:"Jason",
+        role:"manager",
+        img:"https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg",
+      },
+            {
+        name:"Mabel",
+        role:{role},
+        img:"https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg",
+      },
+      {
+        name:"Allison",
+        role:"manager",
+        img:"https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg",
+      },
+      ]);
   const [role,
     setRole] = useState('developer');
   const showEmployees = true;
