@@ -65,31 +65,7 @@ function App() {
         setRole(e.target.value);
       }} />
       <div class="flex flex-wrap justify-center">
-        <Employee
-        name="Jason"
-        role="manager"
-        img="https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg" />
-        <Employee
-        name="Mabel"
-        role={role}
-        img="https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg" />
-        <Employee
-        name="Allison"
-        img="https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg" />
-        <Employee
-        name="Jason"
-        role="manager"
-        img="https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg" />
-        <Employee
-        name="Mabel"
-        role={role}
-        img="https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg" />
-        <Employee
-        name="Allison"
-        img="https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg" />
-        <Employee
-        name="Allison"
-        img="https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg" />
+      
       </div> < />
     ): (<p>
 You cannot see the employees
