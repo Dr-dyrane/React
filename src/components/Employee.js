@@ -1,4 +1,4 @@
-import EditEmployee from './components/EditEmployee'
+import EditEmployee from './EditEmployee'
 
 
 
