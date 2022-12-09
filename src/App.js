@@ -66,6 +66,7 @@ function App() {
         {employees.map((employee) => {
         return (
           <Employee
+            key={employee.id}
             name={employee.name}
             role={employee.role}
             img={employee.img}
