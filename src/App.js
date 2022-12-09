@@ -46,7 +46,7 @@ function App() {
       {
         name: "Ikenna",
         role: "author",
-        img: "https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg",
+        img: "https://pixabay.com/photos/man-beard-portrait-bearded-man-657869.jpeg",
       },
       {
         name: "Dyrane",
