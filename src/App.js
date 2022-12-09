@@ -65,7 +65,13 @@ function App() {
         setRole(e.target.value);
       }} />
       <div class="flex flex-wrap justify-center">
-      
+        {employees.map((employee) => {
+          <Employee
+            name = {employee.name}
+            role = {employees.role}
+            img = {employee.img}
+          />;
+        })}
       </div> < />
     ): (<p>
 You cannot see the employees
