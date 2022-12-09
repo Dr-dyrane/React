@@ -18,7 +18,7 @@ function App() {
         role: {
           role
         },
-        img: "https://images.pexels.com/photos/3831646/pexels-photo-3831646.jpeg",
+        img: "https://images.pexels.com/photos/2225298/pexels-photo-2225298.jpeg",
       },
       {
         name: "Allison",
@@ -28,17 +28,17 @@ function App() {
       {
         name: "Deli",
         role: "realtor",
-        img: "https://images.pexels.com/photos/831635/pexels-photo-831635.jpeg",
+        img: "https://images.pexels.com/photos/2095582/pexels-photo-2095582.jpeg",
       },
       {
         name: "Bella",
         role: "carer",
-        img: "https://images.pexels.com/photos/2821645/pexels-photo-2821645.jpeg",
+        img: "https://images.pexels.com/photos/3760583/pexels-photo-3760583.jpeg",
       },
       {
         name: "Fortune",
         role: "mariner",
-        img: "https://images.pexels.com/photos/3831045/pexels-photo-3831045.jpeg",
+        img: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg",
       },
       {
         name: "Taiwo",
