@@ -1,6 +1,5 @@
 import '../index.css';
 
-import Header from '../components/Header';
 import Employee from '../components/Employee';
 import AddEmployee from '../components/AddEmployee';
 import EditEmployee from '../components/EditEmployee';
