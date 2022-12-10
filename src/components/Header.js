@@ -51,13 +51,14 @@ export default function Header(props) {
                       <NavLink
                         key={item.name}
                         to={item.href}
-                        className={({ isActive }) => (
-                          return "px-3 py-2 rounded-md text-sm font-medium no-underline" +
-                          (!isActive 
-                          ? "text-gray-300 hover:bg-gray-700 hover:text-white"
-                          : "bg-gray-900 text-white"
+                        className={({ isActive }) => {
+                          return (
+                            "px-3 py-2 rounded-md text-sm font-medium no-underline" +
+                            (!isActive 
+                              ? "text-gray-300 hover:bg-gray-700 hover:text-white"
+                              : "bg-gray-900 text-white")
                           );
-                        )}
+                        }}
                       >
                         {item.name}
                       </NavLink>
