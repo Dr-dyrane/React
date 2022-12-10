@@ -163,9 +163,10 @@ export default function Header(props) {
                 </Disclosure.Button>
       ))}
       </div>
-          </Disclosure.Panel>< />
+          </Disclosure.Panel>
+          {props.children}
+          < />
     )}
     </Disclosure>
-    {props.children}
   )
 }
