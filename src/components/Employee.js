@@ -1,6 +1,4 @@
-import EditEmployee from './EditEmployee'
-
-
+import EditEmployee from './EditEmployee';
 
 function Employee(props) {
   return (
