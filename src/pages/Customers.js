@@ -32,7 +32,7 @@ const navigation = [{
     name: 'Calender',
     href: '/other2'
   },
-]
+];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -72,7 +72,10 @@ export default function Header(props) {
             )}*/
             className={({ isActive }) => {
               console.log(item.href + ' ' + isActive)
-            }}>{item.name}</NavLink>
+            }}
+            >
+            {item.name}
+            </NavLink>
         ))}
         </div>
         </div>
