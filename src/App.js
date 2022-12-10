@@ -5,6 +5,7 @@ import Employee from './components/Employee';
 import AddEmployee from './components/AddEmployee';
 import EditEmployee from './components/EditEmployee';
 import Employees from './pages/Employees';
+import Customers from './pages/Customers;
 
 import {
   useState
@@ -24,6 +25,7 @@ function App() {
       <Header>
         <Routes>
           <Route path='/' element={<Employees />} />
+          <Route path='/Customers' element={<Customers />} />
         </Routes>
       </Header>
     </BrowserRouter>
