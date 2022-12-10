@@ -18,11 +18,11 @@ import {
 
 const navigation = [{
   name: 'Employees',
-  href: '/employees'
+  href: '/Employees'
 },
   {
     name: 'Customers',
-    href: '/customers'
+    href: '/Customers'
   },
   {
     name: 'Orders',
