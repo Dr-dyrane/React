@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Employee from './components/Employee';
 import AddEmployee from './components/AddEmployee';
 import EditEmployee from './components/EditEmployee';
+import Employees from './pages/Employees';
 
 import {
   useState
@@ -13,6 +14,6 @@ import {
 } from 'uuid';
 
 function App() {
-  return <Employees/>;
+  return <Employees />;
 }
 export default App;
