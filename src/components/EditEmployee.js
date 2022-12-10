@@ -35,8 +35,6 @@ function EditEmployee(props) {
         onSubmit={(e) => {
           handleClose();
           e.preventDefault();
-          console.log('hello from EditEmployee');
-          console.log (props.id, name, role);
           props.updateEmployee(props.id, name, role);
         }}
         className="w-full max-w-sm">
