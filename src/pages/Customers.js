@@ -65,11 +65,6 @@ export default function Header(props) {
           <NavLink
             key={item.name}
             to={item.href}
-            /*className={classNames(
-              item.current
-              ? 'no-underline ': 'no-underline',
-              ''
-            )}*/
             className={({ isActive }) => {
               return ('px-3 py-2 rounded-md text-sm font-medium no-underline' +
                 (!isActive
