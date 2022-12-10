@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import {NavLink} from 'react-router-dom'
+import { NavLink } from "react-router-dom";
 
 const navigation = [
   {
@@ -50,14 +50,13 @@ export default function Header(props) {
                     {navigation.map((item) => (
                       <NavLink
                         key={item.name}
-                        href={item.href}
-                        className={classNames(
+                        to={item.href}
+                        className={({isActive}) => (
                           item.current
                             ? "no-underline bg-gray-900 text-white"
                             : "no-underline text-gray-300 hover:bg-gray-700 hover:text-white",
                           "px-3 py-2 rounded-md text-sm font-medium"
                         )}
-                        aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
                       </NavLink>
