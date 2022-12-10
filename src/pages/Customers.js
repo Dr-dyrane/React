@@ -25,7 +25,7 @@ const navigation = [{
     href: '/customers'
   },
   {
-    name: 'Orders,
+    name: 'Orders',
     href: '/orders'
   },
   {
