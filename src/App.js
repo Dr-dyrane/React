@@ -93,9 +93,9 @@ function App() {
         {employees.map((employee) => {
         const editEmployee = (
           <EditEmployee
-            id={props.id}
-            name={props.name}
-            role={props.role}
+            id={employee.id}
+            name={employee.name}
+            role={employee.role}
             updateEmployee={updateEmployee}
             />
         );
