@@ -18,7 +18,7 @@ import {
 
 const navigation = [{
   name: 'Employees',
-  href: '/'
+  href: '/employees'
 },
   {
     name: 'Customers',
