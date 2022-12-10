@@ -106,7 +106,7 @@ function App() {
             role={employee.role}
             img={employee.img}
             alt={employee.name}
-            updateEmployee={updateEmployee}
+            editEmployee={editEmployee}
             />);
       })}
       </div>
