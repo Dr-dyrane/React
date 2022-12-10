@@ -65,17 +65,17 @@ function App() {
     setEmployees(updatedEmployees);
   }
 
-  function NewEmployee(name, role, img) {
-    newEmployee = {
+  function newEmployee(name, role, img) {
+    const newEmployee = {
       id: uuidv4(),
       name: name,
       role: role,
       img: img,
     }
-    setEmployees([ 
+    setEmployees([
       ...employees,
       newEmployee
-      ])
+    ])
   }
 
   const showEmployees = true;
