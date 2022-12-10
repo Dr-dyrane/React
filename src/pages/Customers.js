@@ -12,6 +12,8 @@ import {
   XMarkIcon
 } from '@heroicons/react/24/outline'
 
+import {Navlink} from 'react-router-dom'
+
 const navigation = [{
   name: 'Employees',
   href: '/'
@@ -58,17 +60,23 @@ export default function Header(props) {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-          <a
+          <Navlink
             key={item.name}
             href={item.href}
             className={classNames(
-              item.current ? 'no-underline bg-gray-900 text-white': 'no-underline text-gray-300 hover:bg-gray-700 hover:text-white',
+              item.current
+                ? 'no-underline bg-gray-900 text-white'
+                : 'no-underline text-gray-300 hover:bg-gray-700 hover:text-white',
               'px-3 py-2 rounded-md text-sm font-medium'
             )}
-            aria-current={item.current ? 'page': undefined}
+            aria-current={
+            item.current 
+            ? 'page'
+            : undefined
+            }
             >
                         {item.name}
-                      </a>
+                      </Navlink>
         ))}
         </div>
         </div>
