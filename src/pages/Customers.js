@@ -25,12 +25,12 @@ const navigation = [{
     href: '/Customers'
   },
   {
-    name: 'Orders',
-    href: '/orders'
+    name: 'Projects',
+    href: '/other'
   },
   {
-    name: 'Deliveries',
-    href: '/deliveries'
+    name: 'Calender',
+    href: '/other2'
   },
 ]
 
