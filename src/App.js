@@ -69,10 +69,14 @@ function App() {
 
   function updateEmployee(id, newName, newRole) {
     const updatedEmployees = employees.map((employee) => {
-      if (id == employee.id){
-        return {...employee, name: newName,  role: newRole}
+      if (id == employee.id) {
+        return {
+          ...employee,
+          name: newName,
+          role: newRole
+        };
       }
-      
+
       return employee;
     });
     setEmployees(updatedEmployees);
