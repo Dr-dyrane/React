@@ -70,9 +70,9 @@ export default function Header(props) {
               ? 'no-underline bg-gray-900 text-white': 'no-underline text-gray-300 hover:bg-gray-700 hover:text-white',
               'px-3 py-2 rounded-md text-sm font-medium'
             )}
-            className="{({isActive}) => {
-              console.log(item.href + '' + )
-            }}"
+            className={({ isActive }) => {
+              console.log(item.href + ' ' + isActive)
+            }}
             aria-current={
             item.current
             ? 'page': undefined
