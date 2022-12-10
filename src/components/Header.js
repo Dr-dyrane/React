@@ -6,22 +6,18 @@ const navigation = [
   {
     name: "Employees",
     href: "/Employees",
-    current: true,
   },
   {
     name: "Customers",
     href: "/Customers",
-    current: false,
   },
   {
     name: "Projects",
     href: "#",
-    current: false,
   },
   {
     name: "Calendar",
     href: "#",
-    current: false,
   },
 ];
 
