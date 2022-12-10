@@ -66,6 +66,11 @@ function App() {
         img: "https://images.pexels.com/photos/3839645/pexels-photo-3839645.jpeg",
       },
     ]);
+    
+  function updateEmployee(id, newName, newRole){
+    console.log ('updateEmployee inside of App.js');
+  }  
+    
   const showEmployees = true;
   return (
     <div className="App">
@@ -83,6 +88,7 @@ function App() {
             role={employee.role}
             img={employee.img}
             alt={employee.name}
+            updateEmployee={updateEmployee}
             />);
       })}
       </div> < />
