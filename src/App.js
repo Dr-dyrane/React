@@ -15,9 +15,9 @@ import {
 
 function App() {
   return (
-    <Header
+    <Header>
       <Employees />
-    />
+    </Header>
   );
 }
 export default App;
