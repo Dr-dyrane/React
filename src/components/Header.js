@@ -142,16 +142,16 @@ export default function Header(props) {
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
-                  as=NavLink
+                  as="NavLink"
                   to={item.href}
                   className={({ isActive }) => {
-                          return (
-                            " block px-3 py-2 rounded-md text-base font-medium no-underline " +
-                            (!isActive
-                              ? "text-gray-300 hover:bg-gray-700 hover:text-white"
-                              : "bg-gray-900 text-white")
-                          );
-                        }}
+                    return (
+                      " block px-3 py-2 rounded-md text-base font-medium no-underline " +
+                      (!isActive
+                        ? "text-gray-300 hover:bg-gray-700 hover:text-white"
+                        : "bg-gray-900 text-white")
+                    );
+                  }}
                 >
                   {item.name}
                 </Disclosure.Button>
