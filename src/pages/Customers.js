@@ -65,11 +65,11 @@ export default function Header(props) {
           <NavLink
             key={item.name}
             to={item.href}
-            /*className={classNames(
+            {/*className={classNames(
               item.current
               ? 'no-underline bg-gray-900 text-white': 'no-underline text-gray-300 hover:bg-gray-700 hover:text-white',
               'px-3 py-2 rounded-md text-sm font-medium'
-            )}*/
+            )}*/}
             className={({ isActive }) => {
               console.log(item.href + ' ' + isActive)
             }}
