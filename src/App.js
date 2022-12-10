@@ -90,25 +90,25 @@ function App() {
       }} />
       <div className="flex flex-wrap justify-center">
         {employees.map((employee) => {
-          const editEmployee = (
-            <EditEmployee
-              id={props.id}
-              name={props.name}
-              role={props.role}
-              updateEmployee={props.updateEmployee}
+        const editEmployee = (
+          <EditEmployee
+            id={props.id}
+            name={props.name}
+            role={props.role}
+            updateEmployee={updateEmployee}
             />
-          );
-            return (
-              <Employee
-                key={employee.id}
-                id={employee.id}
-                name={employee.name}
-                role={employee.role}
-                img={employee.img}
-                alt={employee.name}
-                updateEmployee={updateEmployee}
-                />);
-          })}
+        );
+        return (
+          <Employee
+            key={employee.id}
+            id={employee.id}
+            name={employee.name}
+            role={employee.role}
+            img={employee.img}
+            alt={employee.name}
+            updateEmployee={updateEmployee}
+            />);
+      })}
       </div>
       <AddEmployee newEmployee={newEmployee} /> < />
     ): (<p>
