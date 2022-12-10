@@ -85,14 +85,9 @@ function App() {
   const showEmployees = true;
   return (
     <div className="App">
-    <Header/>
+    <Header />
       {showEmployees ? (
       <>
-      <input
-      type='text'
-      onChange={(e) => {
-        setRole(e.target.value);
-      }} />
       <div className="flex flex-wrap justify-center">
         {employees.map((employee) => {
         const editEmployee = (
