@@ -1,7 +1,10 @@
 import './index.css';
+
+import Header from './components/Header';
 import Employee from './components/Employee';
 import AddEmployee from './components/AddEmployee';
 import EditEmployee from './components/EditEmployee';
+
 import {
   useState
 } from 'react';
@@ -82,6 +85,7 @@ function App() {
   const showEmployees = true;
   return (
     <div className="App">
+    <Header/>
       {showEmployees ? (
       <>
       <input
