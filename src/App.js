@@ -1,18 +1,10 @@
 import './index.css';
 
 import Header from './components/Header';
-import Employee from './components/Employee';
-import AddEmployee from './components/AddEmployee';
-import EditEmployee from './components/EditEmployee';
-import Employees from './pages/Employees';
-import Customers from './pages/Customers;
 
-import {
-  useState
-} from 'react';
-import {
-  v4 as uuidv4
-} from 'uuid';
+import Employees from './pages/Employees';
+import Customers from './pages/Customers';
+
 import {
   BrowserRouter,
   Routes,
@@ -25,7 +17,7 @@ function App() {
       <Header>
         <Routes>
           <Route path='/' element={<Employees />} />
-          <Route path='/Customers' element={<Customers />} />
+          <Route path='/customers' element={<Customers />} />
         </Routes>
       </Header>
     </BrowserRouter>
