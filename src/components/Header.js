@@ -166,7 +166,7 @@ export default function Header(props) {
           </Disclosure.Panel>
       {
         props.children
-      } < footer > <div className="items-cente text-whiter">
+      } < footer > <div className="text-white">
 Example
       </div> < /footer> < / >
     )}
