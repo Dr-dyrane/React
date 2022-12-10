@@ -12,7 +12,9 @@ import {
   XMarkIcon
 } from '@heroicons/react/24/outline'
 
-import {Navlink} from 'react-router-dom'
+import {
+  Navlink
+} from 'react-router-dom'
 
 const navigation = [{
   name: 'Employees',
@@ -65,18 +67,16 @@ export default function Header(props) {
             href={item.href}
             className={classNames(
               item.current
-                ? 'no-underline bg-gray-900 text-white'
-                : 'no-underline text-gray-300 hover:bg-gray-700 hover:text-white',
+              ? 'no-underline bg-gray-900 text-white': 'no-underline text-gray-300 hover:bg-gray-700 hover:text-white',
               'px-3 py-2 rounded-md text-sm font-medium'
             )}
+            className="{({isActive}) => {
+              console.log(item.href + '' + )
+            }}"
             aria-current={
-            item.current 
-            ? 'page'
-            : undefined
-            }
-            >
-                        {item.name}
-                      </Navlink>
+            item.current
+            ? 'page': undefined
+            }>{item.name}</Navlink>
         ))}
         </div>
         </div>
