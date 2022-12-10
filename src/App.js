@@ -14,10 +14,10 @@ import {
 } from 'uuid';
 
 function App() {
-  return(
+  return (
     <Header>
-      {props.Employee}
-    <Header/>
+      <Employees/>
+    <Header />
   );
 }
 export default App;
