@@ -1,20 +1,20 @@
 import {
   Fragment
-} from 'react'
+} from 'react';
 import {
   Disclosure,
   Menu,
   Transition
-} from '@headlessui/react'
+} from '@headlessui/react';
 import {
   Bars3Icon,
   BellIcon,
   XMarkIcon
-} from '@heroicons/react/24/outline'
+} from '@heroicons/react/24/outline';
 
 import {
   NavLink
-} from 'react-router-dom'
+} from 'react-router-dom';
 
 const navigation = [{
   name: 'Employees',
@@ -35,7 +35,7 @@ const navigation = [{
 ];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(' ');
 }
 
 export default function Header(props) {
