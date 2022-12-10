@@ -64,7 +64,17 @@ function App() {
     });
     setEmployees(updatedEmployees);
   }
-
+  
+  function NewEmployee(name, role, img){
+    newEmployee = {
+      id: 
+      name:
+      role:
+      img:
+    }
+    setEmployees([...employees, newEmployee])
+  }
+  
   const showEmployees = true;
   return (
     <div className="App">
@@ -88,9 +98,8 @@ function App() {
             updateEmployee={updateEmployee}
             />);
       })}
-      </div> 
-      <AddEmployee/>
-      < />
+      </div>
+      <AddEmployee /> < />
     ): (<p>
 You cannot see the employees
       </p>
