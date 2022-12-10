@@ -1,5 +1,6 @@
 import './index.css';
 import Employee from './components/Employee'
+import AddEmployee from './components/AddEmployee'
 import {
   useState
 } from 'react';
@@ -69,11 +70,11 @@ function App() {
     <div className="App">
       {showEmployees ? (
       <>
-      <input 
-        type='text' 
-        onChange={(e) => {
-          setRole(e.target.value);
-        }} />
+      <input
+      type='text'
+      onChange={(e) => {
+        setRole(e.target.value);
+      }} />
       <div className="flex flex-wrap justify-center">
         {employees.map((employee) => {
         return (
@@ -87,7 +88,9 @@ function App() {
             updateEmployee={updateEmployee}
             />);
       })}
-      </div> < />
+      </div> 
+      <AddEmployee/>
+      < />
     ): (<p>
 You cannot see the employees
       </p>
