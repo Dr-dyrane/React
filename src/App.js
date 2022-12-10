@@ -47,24 +47,6 @@ function App() {
         role: "mariner",
         img: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg",
       },
-      {
-        id: 7,
-        name: "Taiwo",
-        role: "designer",
-        img: "https://images.pexels.com/photos/3821645/pexels-photo-3821645.jpeg",
-      },
-      {
-        id: 8,
-        name: "Ikenna",
-        role: "author",
-        img: "https://images.pexels.com/photos/3831745/pexels-photo-3831745.jpeg",
-      },
-      {
-        id: 9,
-        name: "Dyrane",
-        role: "owner",
-        img: "https://images.pexels.com/photos/3839645/pexels-photo-3839645.jpeg",
-      },
     ]);
 
   function updateEmployee(id, newName, newRole) {
