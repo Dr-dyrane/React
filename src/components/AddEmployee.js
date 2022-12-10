@@ -36,6 +36,9 @@ function AddEmployee(props) {
         id="editmodal"
         onSubmit={(e) => {
           e.preventDefault();
+          setName('');
+          setRole('');
+          setImg('');
           props.newEmployee(name, role, img);
         }}
         className="w-full max-w-sm">
@@ -91,11 +94,11 @@ function AddEmployee(props) {
         </Modal.Body>
         <Modal.Footer>
           <button onClick={handleClose} className="bg-slate-400 hover:bg-slate-500 text-white font-bold py-2 px-4 rounded">Close</button>
-          <button 
-            form="editmodal" 
-            className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded"
-            onClick={handleClose}
-            >Add</button>
+          <button
+    form="editmodal"
+    className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded"
+    onClick={handleClose}
+    >Add</button>
         </Modal.Footer>
       </Modal> < />
 );
