@@ -84,7 +84,7 @@ function App() {
 
   const showEmployees = true;
   return (
-    <div className="App">
+    <div className="App bg-gray-300 min-h-screen">
     <Header />
       {showEmployees ? (
       <>
@@ -115,8 +115,8 @@ function App() {
 You cannot see the employees
       </p>
     )}
-  </div>
-);
+    </div>
+  );
 }
 
 export default App;
