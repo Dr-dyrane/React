@@ -13,13 +13,13 @@ import {
 } from '@heroicons/react/24/outline'
 
 const navigation = [{
-  name: 'Dashboard',
-  href: '#',
+  name: 'Employees',
+  href: '/',
   current: true
 },
   {
-    name: 'Team',
-    href: '#',
+    name: 'Customers',
+    href: '/customers',
     current: false
   },
   {
