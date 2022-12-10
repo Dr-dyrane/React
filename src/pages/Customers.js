@@ -13,7 +13,7 @@ import {
 } from '@heroicons/react/24/outline'
 
 import {
-  Navlink
+  NavLink
 } from 'react-router-dom'
 
 const navigation = [{
@@ -62,7 +62,7 @@ export default function Header(props) {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-          <Navlink
+          <NavLink
             key={item.name}
             to={item.href}
             /*className={classNames(
@@ -72,7 +72,7 @@ export default function Header(props) {
             )}*/
             className={({ isActive }) => {
               console.log(item.href + ' ' + isActive)
-            }}>{item.name}</Navlink>
+            }}>{item.name}</NavLink>
         ))}
         </div>
         </div>
