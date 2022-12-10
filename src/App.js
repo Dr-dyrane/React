@@ -1,6 +1,7 @@
 import './index.css';
 import Employee from './components/Employee'
 import AddEmployee from './components/AddEmployee'
+import EditEmployee from './components/EditEmployee'
 import {
   useState
 } from 'react';
