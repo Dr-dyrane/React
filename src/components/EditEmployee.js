@@ -25,7 +25,7 @@ function EditEmployee() {
           <Modal.Title>Update Employee</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <form className="w-full max-w-sm">
+          <form id="editmodal" className="w-full max-w-sm">
             <div className="md:flex md:items-center mb-6">
               <div className="md:w-1/3">
                 <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="name">Full Name</label>
@@ -45,10 +45,8 @@ function EditEmployee() {
     </form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary">Update</Button>
+          <button onClick={handleClose} className="bg-blue-500 hover:bg-slate-400 text-white font-bold py-2 px-4 rounded">Close</button>
+          <button form="editmodal" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Update</button>
         </Modal.Footer>
       </Modal> < />
 );
