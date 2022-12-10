@@ -33,6 +33,7 @@ function EditEmployee(props) {
           <form
         id="editmodal"
         onSubmit={(e) => {
+          handleClose();
           e.preventDefault();
           console.log('hello from EditEmployee');
           console.log (props.id, name, role);
