@@ -15,9 +15,9 @@ import {
 
 function App() {
   return (
-    <Header>
-      <Employees/>
-    <Header />
+    <Header
+      <Employees />
+    />
   );
 }
 export default App;
