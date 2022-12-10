@@ -25,12 +25,12 @@ const navigation = [{
     href: '/customers'
   },
   {
-    name: 'Projects',
-    href: '#'
+    name: 'Orders,
+    href: '/orders'
   },
   {
-    name: 'Calendar',
-    href: '#'
+    name: 'Deliveries',
+    href: '/deliveries'
   },
 ]
 
@@ -64,19 +64,15 @@ export default function Header(props) {
                     {navigation.map((item) => (
           <Navlink
             key={item.name}
-            href={item.href}
-            className={classNames(
+            to={item.href}
+            {/*className={classNames(
               item.current
               ? 'no-underline bg-gray-900 text-white': 'no-underline text-gray-300 hover:bg-gray-700 hover:text-white',
               'px-3 py-2 rounded-md text-sm font-medium'
-            )}
+            )}*/}
             className={({ isActive }) => {
               console.log(item.href + ' ' + isActive)
-            }}
-            aria-current={
-            item.current
-            ? 'page': undefined
-            }>{item.name}</Navlink>
+            }}>{item.name}</Navlink>
         ))}
         </div>
         </div>
