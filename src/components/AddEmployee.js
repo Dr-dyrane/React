@@ -9,6 +9,8 @@ function AddEmployee(props) {
     setName] = useState('');
   const [role,
     setRole] = useState('');
+  const [img,
+    setImg] = useState('');
 
   const [show,
     setShow] = useState(false);
