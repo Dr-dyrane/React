@@ -88,7 +88,7 @@ function App() {
     <Header />
       {showEmployees ? (
       <>
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center my-2">
         {employees.map((employee) => {
         const editEmployee = (
           <EditEmployee
