@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 
 export default function Dictionary() {
-  const [word, setWord] = useState();
-  
+  const [word, setWord] = useState("");
+
   useEffect(() => {
-    console.log ('State Updated')
+    console.log("State Updated", word);
   });
 
   return (
