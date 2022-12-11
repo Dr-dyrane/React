@@ -4,13 +4,19 @@ export default function Dictionary() {
   const [word, setWord] = useState("");
   const [word2, setWord2] = useState("");
 
-  useEffect(() => {
-    console.log("State Updated " + word);
-  },{word});
-  
-  useEffect(() => {
-    console.log("State Updated " + word2);
-  },{word2});
+  useEffect(
+    () => {
+      console.log("State Updated " + word);
+    },
+    { word }
+  );
+
+  useEffect(
+    () => {
+      console.log("State Updated " + word2);
+    },
+    { word2 }
+  );
 
   return (
     <>
