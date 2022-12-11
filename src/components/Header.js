@@ -101,8 +101,10 @@ export default function Header(props) {
           </>
         )}
       </Disclosure>
+      <div className="App bg-gray-300 min-h-screen">
       {props.children}
-      <footer className= "bg-gray-900">
+      </div>
+      <footer className="bg-gray-900">
         <div className="text-white text-center">Example</div>
       </footer>
     </>
