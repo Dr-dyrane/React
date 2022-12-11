@@ -1,8 +1,8 @@
 import "./index.css";
 
 import Header from "./components/Header";
-import Dictionary from "./components/Dictionary";
 
+import Dictionary from "./pages/Dictionary";
 import Employees from "./pages/Employees";
 import Customers from "./pages/Customers";
 
