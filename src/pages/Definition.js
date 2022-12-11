@@ -2,6 +2,6 @@ import { useState, useEffect } from "react";
 
 
 export default function Definition() {
-  useEffe(() => {}, []);
+  useEffect(() => {}, []);
   return <p>Here is a definition</p>
 }
