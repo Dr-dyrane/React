@@ -47,7 +47,7 @@ function Employees() {
 
   function updateEmployee(id, newName, newRole) {
     const updatedEmployees = employees.map((employee) => {
-      if (id == employee.id) {
+      if (id === employee.id) {
         return {
           ...employee,
           name: newName,

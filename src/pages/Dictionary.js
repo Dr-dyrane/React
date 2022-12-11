@@ -26,7 +26,7 @@ export default function Dictionary() {
           setWord(e.target.value);
         }}
       />
-      <h2>Let's get the definition for {word2}</h2>
+      <h2>Let's get the definition for {word}</h2>
       <input
         type="text"
         onChange={(e) => {
