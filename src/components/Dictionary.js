@@ -5,7 +5,7 @@ export default function Dictionary() {
   const [word2, setWord2] = useState("");
 
   useEffect(() => {
-    console.log("State Updated", word);
+    console.log("State Updated", word + ' ' + word2);
   });
 
   return (
@@ -20,7 +20,7 @@ export default function Dictionary() {
       <input
         type="text"
         onChange={(e) => {
-          setWord(e.target.value);
+          setWord2(e.target.value);
         }}
       />
       <h2>Let's get the definition for {word2}</h2>
