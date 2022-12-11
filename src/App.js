@@ -1,6 +1,7 @@
 import "./index.css";
 
 import Header from "./components/Header";
+import Dictionary from "./components/Dictionary";
 
 import Employees from "./pages/Employees";
 import Customers from "./pages/Customers";
