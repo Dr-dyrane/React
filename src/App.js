@@ -13,6 +13,7 @@ function App() {
       <Header>
         <Routes>
           <Route path="/employees" element={<Employees />} />
+          <Route path="/dictionary" element={<Dictionary />} />
           <Route path="/customers" element={<Customers />} />
         </Routes>
       </Header>
