@@ -102,9 +102,12 @@ export default function Header(props) {
         )}
       </Disclosure>
       <div className="bg-gray-300">
-      <div className="max-w-7xl mx-auto min-h-screen px-2 py-2">{props.children}</div></div>
+        <div className="max-w-7xl mx-auto min-h-screen px-2 py-2">
+          {props.children}
+        </div>
+      </div>
       <footer className="bg-gray-900">
-        <div className="text-white text-center">Example</div>
+        <div className="text-white text-center">Copyright 2022</div>
       </footer>
     </>
   );
