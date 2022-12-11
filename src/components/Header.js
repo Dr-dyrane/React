@@ -28,6 +28,7 @@ function classNames(...classes) {
 
 export default function Header(props) {
   return (
+    <>
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
         <>
@@ -96,13 +97,14 @@ export default function Header(props) {
               ))}
             </div>
           </Disclosure.Panel>
-          {props.children}{" "}
-          <footer>
-            {" "}
-            <div className="text-white text-center">Example</div>{" "}
-          </footer>{" "}
+          
         </>
       )}
     </Disclosure>
+    {props.children}
+    <footer>
+      <div className="text-white text-center">Example</div>
+    </footer>
+    </>
   );
 }
