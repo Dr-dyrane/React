@@ -16,14 +16,14 @@ export default function Dictionary() {
           setWord(e.target.value);
         }}
       />
-      <h1>Let's get the definition for {word2}</h1>
+      <h2>Let's get the definition for {word2}</h2>
       <input
         type="text"
         onChange={(e) => {
           setWord(e.target.value);
         }}
       />
-      <h1>Let's get the definition for {word2}</h1>
+      <h2>Let's get the definition for {word2}</h2>
     </>
   );
 }
