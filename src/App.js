@@ -1,6 +1,7 @@
 import "./index.css";
 
 import Header from "./components/Header";
+import NotFound from "./components/NotFound";
 
 import Dictionary from "./pages/Dictionary";
 import Definition from "./pages/Definition";
@@ -16,8 +17,10 @@ function App() {
         <Routes>
           <Route path="/employees" element={<Employees />} />
           <Route path="/dictionary" element={<Dictionary />} />
-          <Route path="/definition" element={<Definition />} />
+          <Route path="/dictionary/:search" element={<Definition />} />
           <Route path="/customers" element={<Customers />} />
+          <Route path="/404" element={<NotFound />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Header>
     </BrowserRouter>
