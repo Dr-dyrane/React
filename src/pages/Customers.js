@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { baseUrl } from "../shared";
 
 import AddCustomer from "../components/AddCustomer";
@@ -7,16 +7,21 @@ import AddCustomer from "../components/AddCustomer";
 export default function Customers() {
   const [customers, setCustomers] = useState();
   const [show, setShow] = useState(false);
+  const navigate = useNavigate();
 
   function toggleShow() {
     setShow(!show);
   }
 
   useEffect(() => {
-    console.log("Fetching...");
     const url = baseUrl + "api/customers/";
     fetch(url)
-      .then((response) => response.json())
+      .then((response) => {
+        if (response.status === 401) {
+          navigate("/login");
+        }
+        return response.json();
+      })
       .then((data) => {
         setCustomers(data.customers);
       });
@@ -49,17 +54,19 @@ export default function Customers() {
   return (
     <>
       <h1>Here are our customers:</h1>
-      <ul>
-        {customers
-          ? customers.map((customer) => {
-              return (
-                <li key={customer.id}>
-                  <Link to={"/customers/" + customer.id}>{customer.name}</Link>
-                </li>
-              );
-            })
-          : null}
-      </ul>
+      {customers
+        ? customers.map((customer) => {
+            return (
+              <div className="m-2" key={customer.id}>
+                <Link to={"/customers/" + customer.id}>
+                  <button className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded text-decoration-none">
+                    {customer.name}
+                  </button>
+                </Link>
+              </div>
+            );
+          })
+        : null}
       <AddCustomer
         newCustomer={newCustomer}
         show={show}
