@@ -1,9 +1,13 @@
 import { useState } from "react";
 import { baseUrl } from "../shared";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export default function Login() {
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
+
+  const location = useLocation();
+  const navigate = useNavigate();
 
   function login(e) {
     e.preventDefault();
@@ -24,7 +28,7 @@ export default function Login() {
       .then((data) => {
         localStorage.setItem("refresh", data.refresh);
         localStorage.setItem("access", data.access);
-        console.log(localStorage);
+        navigate(location?.state?.previousUrl ? location.state.previousUrl: '/customers');
       });
   }
   return (

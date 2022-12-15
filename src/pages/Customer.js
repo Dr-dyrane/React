@@ -1,4 +1,4 @@
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, Link, useNavigate, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import NotFound from "../components/NotFound";
 import { baseUrl } from "../shared";
@@ -11,6 +11,8 @@ export default function Customer() {
   const [notFound, setNotFound] = useState(false);
   const [changed, setChanged] = useState(false);
   const [error, setError] = useState();
+  const location = useLocation();
+  const currentUrl = location.pathname
 
   useEffect(() => {
     if (!tempCustomer) return;
@@ -35,7 +37,11 @@ export default function Customer() {
         if (response.status === 404) {
           setNotFound(true);
         } else if (response.status === 401) {
-          navigate("/login");
+          navigate("/login", {
+            state: {
+              previousUrl: currentUrl,
+            },
+          });
         }
         if (!response.ok) {
           throw new Error("Something went wrong ");
@@ -156,9 +162,9 @@ export default function Customer() {
                 fetch(url, {
                   method: "DELETE",
                   headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("access"),
-      },
+                    "Content-Type": "application/json",
+                    Authorization: "Bearer " + localStorage.getItem("access"),
+                  },
                 })
                   .then((response) => {
                     if (response.status === 401) {
@@ -183,7 +189,7 @@ export default function Customer() {
       <br />
       <Link to="/customers" to="/customers">
         <button className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded text-decoration-none">
-          &#8592;Go back
+          &#8592;&nbsp;Go back
         </button>
       </Link>
     </div>
