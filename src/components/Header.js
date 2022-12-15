@@ -107,7 +107,7 @@ export default function Header(props) {
         </div>
       </div>
       <footer className="bg-gray-900">
-        <div className="text-white px-2 py-2 text-center">Copyright 2022</div>
+        <div className="text-white px-2 py-2 text-center">React App © 2022</div>
       </footer>
     </>
   );
