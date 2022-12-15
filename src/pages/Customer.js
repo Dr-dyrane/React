@@ -59,10 +59,14 @@ export default function Customer() {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        Authorization: "Bearer " + localStorage.getItem("access"),
       },
       body: JSON.stringify(tempCustomer),
     })
       .then((response) => {
+        if (response.status === 401) {
+          navigate("/login");
+        }
         if (!response.ok) {
           throw new Error("Something went wrong");
         }
@@ -152,10 +156,14 @@ export default function Customer() {
                 fetch(url, {
                   method: "DELETE",
                   headers: {
-                    "Content-Type": "application/json",
-                  },
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + localStorage.getItem("access"),
+      },
                 })
                   .then((response) => {
+                    if (response.status === 401) {
+                      navigate("/login");
+                    }
                     if (!response.ok) {
                       throw new Error("Something went wrong");
                     }
