@@ -1,25 +1,32 @@
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { baseUrl } from "../shared";
 import { LoginContext } from "../App";
 import { useLocation, useNavigate } from "react-router-dom";
 
-export default function Login() {
+export default function Register() {
   const [username, setUsername] = useState();
+  const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [loggedIn, setLoggedIn] = useState(LoginContext);
 
   const location = useLocation();
   const navigate = useNavigate();
 
-  function login(e) {
+  useEffect(() => {
+    localStorage.clear();
+    setLoggedIn(false);
+  }, []);
+
+  function register(e) {
     e.preventDefault();
-    const url = baseUrl + "api/token/";
+    const url = baseUrl + "api/register/";
     fetch(url, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
+        email: email,
         username: username,
         password: password,
       }),
@@ -30,16 +37,30 @@ export default function Login() {
       .then((data) => {
         localStorage.setItem("refresh", data.refresh);
         localStorage.setItem("access", data.access);
-        setLoggedIn(true)
+        setLoggedIn(true);
         navigate(
-          location?.state?.previousUrl
-            ? location.state.previousUrl
-            : "/customers"
+          location?.state?.previousUrl ? location.state.previousUrl : "/login"
         );
       });
   }
   return (
-    <form className="w-full max-w-sm m-2" id="customer" onSubmit={login}>
+    <form className="w-full max-w-sm m-2" id="customer" onSubmit={register}>
+      <div className="md:flex md:items-center mb-6">
+        <div className="md:w-1/4">
+          <label for="email">Email</label>
+        </div>
+        <div className="md:w-3/4">
+          <input
+            id="email"
+            className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+            type="email"
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+          />
+        </div>
+      </div>
       <div className="md:flex md:items-center mb-6">
         <div className="md:w-1/4">
           <label for="username">Username</label>
@@ -73,7 +94,7 @@ export default function Login() {
         </div>
       </div>
       <button className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
-        Login
+        Register
       </button>
     </form>
   );

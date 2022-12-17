@@ -4,49 +4,40 @@ import { v4 as uuidv4 } from "uuid";
 import NotFound from "../components/NotFound";
 import DefinitionSearch from "../components/DefinitionSearch";
 
+import useFetch from "../hooks/UseFetch";
+
 export default function Definition() {
-  const [word, setWord] = useState();
-  const [notFound, setNotFound] = useState(false);
-  const [error, setError] = useState(false);
   let { search } = useParams();
   const navigate = useNavigate();
 
+  const url = "https://api.dictionaryapi.dev/api/v2/entries/en/" + search;
+  const {
+    request,
+    data: [{ meanings: word }] = [{}],
+    errorStatus,
+  } = useFetch(url);
+
   useEffect(() => {
-    const url = "https://api.dictionaryapi.dev/api/v2/entries/en/" + search;
-    fetch(url)
-      .then((response) => {
-        if (response.status === 404) {
-          setNotFound(true);
-        } else if (response.status === 401) {
-          navigate("/login");
-        } else if (response.status === 500) {
-          setError(true);
-        }
-        if (!response.ok) {
-          setError(true);
-          throw new Error("Something went wrong");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        setWord(data[0].meanings);
-      })
-      .catch((e) => {
-        console.log(e.message);
-      });
+    request();
   }, []);
-  if (notFound === true) {
+  
+  if (errorStatus === 404) {
     return (
       <>
         <NotFound />
-        <Link to="/dictionary">Search another</Link>
+        <Link
+          className="no-underline p-2 text-white rounded bg-purple-600 "
+          to="/dictionary"
+        >
+          Search another
+        </Link>
       </>
     );
   }
-  if (error === true) {
+  if (errorStatus) {
     return (
       <>
-        <p>Something went wwrong, try again</p>
+        <p>Something went wrong, try again</p>
         <Link to="/dictionary">Search another</Link>
       </>
     );
@@ -55,7 +46,7 @@ export default function Definition() {
     <>
       {word ? (
         <>
-          <h1>Here is a definition:</h1>
+          <h1>Here is a definition for '{search}':</h1>
           {word.map((meaning) => {
             return (
               <p key={uuidv4()}>
